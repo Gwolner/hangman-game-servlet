@@ -1,2 +1,5 @@
-# hangman-game-servlet
-Jogo da forca (hangman game) com Servlet no back e JSP no front.
+# Hangman game
+
+> Aplicação web que disponibiliza um jogo da forca em interface fornecida por JSP, consumindo Servlet no backenD.
+
+
