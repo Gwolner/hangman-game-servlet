@@ -19,7 +19,12 @@ public class Forca {
     public Forca(String  palavra){
         this.palavra = palavra;
         this.acertos = new char[palavra.length()];
+        this.erros = new char[5];
+        this.tentativas = 0;
         
+        for(int i = 0; i < this.palavra.length();i++){
+            this.acertos[i] = '_';
+        }
     }
     
 }
