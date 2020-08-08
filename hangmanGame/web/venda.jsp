@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Dados da venda</h1>
-        <form method="post" action="venda">
+        <form method="post" actio="venda">
             Nome do produto:<br>
             <input type="text" name="produto"><br>
             Quantidade:<br>
