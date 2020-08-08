@@ -13,13 +13,13 @@
     </head>
     <body>
         <h1>Dados da venda</h1>
-        <form method="post" actiob="venda">
+        <form method="post" action="venda">
             Nome do produto:<br>
-            <input type="text" value="produto"><br>
+            <input type="text" name="produto"><br>
             Quantidade:<br>
-            <input type="text" value="quantidade"><br>
-            Vaalor<br>
-            <input type="text" value="valor"><br>
+            <input type="text" name="quantidade"><br>
+            Valor<br>
+            <input type="text" name="valor"><br>
             <input type="submit" value="Calcular">
         </form>
     </body>

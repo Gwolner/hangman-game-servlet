@@ -26,5 +26,4 @@ public class Forca {
             this.acertos[i] = '_';
         }
     }
-    
 }

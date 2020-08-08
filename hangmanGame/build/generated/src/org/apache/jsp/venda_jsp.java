@@ -54,11 +54,11 @@ public final class venda_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <h1>Dados da venda</h1>\n");
       out.write("        <form method=\"post\" actiob=\"venda\">\n");
       out.write("            Nome do produto:<br>\n");
-      out.write("            <input type=\"text\" value=\"produto\"><br>\n");
+      out.write("            <input type=\"text\" name=\"produto\"><br>\n");
       out.write("            Quantidade:<br>\n");
-      out.write("            <input type=\"text\" value=\"quantidade\"><br>\n");
-      out.write("            Vaalor<br>\n");
-      out.write("            <input type=\"text\" value=\"valor\"><br>\n");
+      out.write("            <input type=\"text\" name=\"quantidade\"><br>\n");
+      out.write("            Valor<br>\n");
+      out.write("            <input type=\"text\" name=\"valor\"><br>\n");
       out.write("            <input type=\"submit\" value=\"Calcular\">\n");
       out.write("        </form>\n");
       out.write("    </body>\n");

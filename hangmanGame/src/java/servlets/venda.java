@@ -19,8 +19,8 @@ public class venda extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         
         float valor = Float.parseFloat(request.getParameter("valor"));
-        int quantidade = Integer.parseInt(request.getParameter("quanttidade"));
-        float valorTotal = valor  + quantidade;
+        int quantidade = Integer.parseInt(request.getParameter("quantidade"));
+        float valorTotal = valor * quantidade;
         String produto = request.getParameter("produto"); 
         
         try (PrintWriter out = response.getWriter()) {
