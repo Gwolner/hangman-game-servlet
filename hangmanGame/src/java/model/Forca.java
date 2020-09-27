@@ -1,29 +1,53 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
 
-/**
- *
- * @author Wolf
- */
+
 public class Forca {
     
-    private String palavra;
-    private char[] acertos;
-    private char[] erros;
-    private int tentativas;
+    private static Forca gibbet;
     
-    public Forca(String  palavra){
-        this.palavra = palavra;
-        this.acertos = new char[palavra.length()];
-        this.erros = new char[5];
-        this.tentativas = 0;
+    private String word;
+    private char[] hits;
+    private char[] errors;
+    private int attempts;
+    
+    private Forca(){
+        this.word = "VASSOURA";        
         
-        for(int i = 0; i < this.palavra.length();i++){
-            this.acertos[i] = '_';
+        for(int i=0; i < this.word.length();i++){
+            hits[i] = "_ ".charAt(i);
         }
+        
+        this.attempts = 0;
+    }
+    
+    public static Forca getInstance(){
+        if(gibbet == null){
+            gibbet = new Forca();
+        }
+        
+        return gibbet;
+    }
+    
+    
+    public void checkLetter(char letter){
+        //Verifica a letra informada
+        for(int i=0; i < this.word.length();i++){
+            if(this.word.charAt(i) == letter){
+                this.hits[i] = letter;
+            }
+        }
+    }   
+    
+    
+    public void updateHits(char letter){
+        //Atualiza os acertos
+    }
+    
+    public void updateErrors(char letter){
+        //Atualiza os erros
+    }
+    
+    public void updateAttempts(char letter){
+        //Atualiza o numero de tentativas
     }
 }
